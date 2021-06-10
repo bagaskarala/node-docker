@@ -1,0 +1,11 @@
+---
+application:
+  name: "node-docker"
+  project: "project-bagaskara"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-node-docker"
+  routes:
+  - application_name: "node-docker"
+    paths:
+    - "/*"
