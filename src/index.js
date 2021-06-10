@@ -1,5 +1,9 @@
 const app = require('express')();
 
+app.get('/test', (req, res) => {
+    res.end('test page');
+});
+
 app.get('/', (req, res) => {
     res.json({ message: 'bagaskara' });
 });
