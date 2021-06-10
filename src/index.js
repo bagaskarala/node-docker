@@ -1,7 +1,12 @@
 const app = require('express')();
+require('dotenv').config();
 
 app.get('/test', (req, res) => {
     res.end('test page');
+});
+
+app.get('/env', (req, res) => {
+    res.json({ name_env: process.env.name });
 });
 
 app.get('/', (req, res) => {
