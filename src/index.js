@@ -5,6 +5,10 @@ app.get('/test', (req, res) => {
     res.end('test page');
 });
 
+app.get('/home', (req, res) => {
+    res.end('home page');
+});
+
 app.get('/env', (req, res) => {
     res.json({ name_env: process.env.name });
 });
